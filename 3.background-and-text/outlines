@@ -1,0 +1,16 @@
+Background Properties 
+background : color image repeat attachment position
+
+gradient => linear | radial
+
+
+Text Properties
+text-align :
+text-decoration :
+text-transformation : 
+letter-spacing : 
+word-spacing : 
+text-shadow : 
+
+box-shadow 
+
