@@ -1,0 +1,17 @@
+- Position properties
+    - static
+    - relative
+    - absolute
+    - fixed
+    - sticky
+
+- top, bottom, left, right
+
+- z-index properties
+
+- Float properties
+    - left
+    - right
+    - clear
+    
+- Overflow property

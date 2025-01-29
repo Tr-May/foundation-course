@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery with Caption Overlay</title>
+    <style>
+      /* Container for the gallery */
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 20px;
+      }
+
+      /* Styling for each gallery item */
+      .gallery-item {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        overflow: hidden; /* Hides the overflowing caption */
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Styling for the images */
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      /* Styling for the captions */
+      .caption {
+        position: absolute;
+        bottom: -100%; /* Hides the caption by default */
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        text-align: center;
+        transition: bottom 0.3s ease;
+      }
+
+      /* Hover effect to slide up the caption */
+      .gallery-item:hover .caption {
+        bottom: 0; /* Slides the caption up */
+      }
+
+      /* Optional: Zoom in the image on hover */
+      .gallery-item:hover img {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/240/300/200" alt="Image 1" />
+        <div class="caption">Beautiful Landscape</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/241/300/200" alt="Image 2" />
+        <div class="caption">City at Night</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/242/300/200" alt="Image 3" />
+        <div class="caption">Mountain View</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/243/300/200" alt="Image 4" />
+        <div class="caption">Sunset Beach</div>
+      </div>
+    </div>
+  </body>
+</html>

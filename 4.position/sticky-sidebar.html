@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Sidebar Example</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .container {
+        width: 90%;
+        display: flex;
+        margin: 0 auto;
+      }
+      div {
+        padding: 20px;
+      }
+      div h2 {
+        padding: 10px 0;
+      }
+      div p {
+        line-height: 1.5;
+        text-align: justify;
+      }
+      .sidebar {
+        width: 250px;
+        height: 400px;
+        background-color: #f4f4f4;
+        padding: 20px;
+      }
+      .sidebar a{
+        text-decoration: none;
+        display: block;
+        padding: 10px 0;
+      }
+      .content {
+        flex: 1;
+        padding: 20px;
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- main content  -->
+      <div class="content">
+        <h1>Main Content</h1>
+        <div id="first">
+          <h2>first section</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            numquam architecto consectetur, pariatur dolores ea illo similique
+            nam dolor tempore maiores! Harum, deserunt. Impedit quod facilis
+            iste nihil quis architecto.
+          </p>
+        </div>
+        <div id="second">
+          <h2>second section</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            numquam architecto consectetur, pariatur dolores ea illo similique
+            nam dolor tempore maiores! Harum, deserunt. Impedit quod facilis
+            iste nihil quis architecto.
+          </p>
+        </div>
+        <div id="third">
+          <h2>third section</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            numquam architecto consectetur, pariatur dolores ea illo similique
+            nam dolor tempore maiores! Harum, deserunt. Impedit quod facilis
+            iste nihil quis architecto.
+          </p>
+        </div>
+        <div id="forth">
+          <h2>forth section</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            numquam architecto consectetur, pariatur dolores ea illo similique
+            nam dolor tempore maiores! Harum, deserunt. Impedit quod facilis
+            iste nihil quis architecto.
+          </p>
+        </div>
+        <div id="fifth">
+          <h2>fifth section</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            numquam architecto consectetur, pariatur dolores ea illo similique
+            nam dolor tempore maiores! Harum, deserunt. Impedit quod facilis
+            iste nihil quis architecto.
+          </p>
+        </div>
+        <div id="sixth">
+          <h2>sixth section</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            numquam architecto consectetur, pariatur dolores ea illo similique
+            nam dolor tempore maiores! Harum, deserunt. Impedit quod facilis
+            iste nihil quis architecto.
+          </p>
+        </div>
+        <div id="seventh">
+          <h2>seventh section</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            numquam architecto consectetur, pariatur dolores ea illo similique
+            nam dolor tempore maiores! Harum, deserunt. Impedit quod facilis
+            iste nihil quis architecto.
+          </p>
+        </div>
+      </div>
+
+      <!-- sticky sidebar  -->
+      <div class="sidebar">
+        <h2>Sidebar</h2>
+        <a href="#first">first section</a>
+        <a href="#second">second section</a>
+        <a href="#third">third section</a>
+        <a href="#forth">forth section</a>
+        <a href="#fifth">fifth section</a>
+        <a href="#sixth">sixth section</a>
+        <a href="#seventh">seventh section</a>
+      </div>
+    </div>
+  </body>
+</html>

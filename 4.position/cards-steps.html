@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layered Cards with z-index</title>
+    <style>
+      /* Container for the cards */
+      .card-container {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        margin: 50px auto;
+      }
+
+      /* Base card styling */
+      .card {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        line-height: 150px;
+        font-size: 20px;
+        transition: transform 0.3s ease, z-index 0.3s ease;
+      }
+
+      /* Positioning and z-index for each card */
+      .card1 {
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+
+      .card2 {
+        top: 20px;
+        left: 50px;
+        z-index: 2;
+      }
+
+      .card3 {
+        top: 40px;
+        left: 100px;
+        z-index: 3;
+      }
+
+      /* Hover effect to bring the card to the front */
+      .card:hover {
+        transform: scale(1.1);
+        z-index: 10;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card card1">Card 1</div>
+      <div class="card card2">Card 2</div>
+      <div class="card card3">Card 3</div>
+    </div>
+  </body>
+</html>
